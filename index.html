@@ -1,1 +1,45 @@
-Welcome.
+<!doctype html>
+<html lang="en" data-theme="light">
+  <head>
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
+>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/pico.min.css">
+    <title>Hello world!</title>
+  </head>
+  <body>
+    <main class="container">
+<h2>Blua lago @ huwiki </h2>
+<br>
+<left><ul>
+<li><a href="https://blualago.github.io/bluabot/"><b>BluaBot statisztikák</b></a>: egyszerű weboldal egy MediaWiki-felhasználó közreműködéseinek rendszerezéséhez.</li>
+<li><a href="https://hu.wikipedia.org/w/index.php?title=Szerkesztő:BluaBot/JWB-settings.json&action=edit"><b>JWB-beállítások</b></a>: huwiki specifikus JavaScript WikiBrowser-beállítások, az ellenörzőműhely 22-es, 1-es és 64-es hibáinak javításához.</li>
+
+</ul>
+ </left>
+
+
+
+    </main>
+  </body>
+
+  <small><i><center>
+Legal disclamer: 
+<span id="mathFact">Loading math fact...</span>
+</center></i> 
+
+<script>
+    fetch('http://numbersapi.com/random/math')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('mathFact').innerHTML = data;
+        })
+        .catch(error => {
+            console.error('Error:', error);
+            document.getElementById('mathFact').innerHTML = '345 + 34 = 875';
+        });
+</script>
+</html>
